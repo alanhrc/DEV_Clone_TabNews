@@ -8,7 +8,7 @@
 {
   "extends": "@rocketseat/eslint-config/react",
   "rules": {
-    "no-console": "warn",
+    "no-console": ["warn", { "allow": ["error"] }],
     "prettier/prettier": [
       "error",
       {
