@@ -6,7 +6,7 @@
   "scripts": {
     "services:up": "docker compose -f infra/tabnews-database/compose.yaml up -d",
     "services:stop": "docker compose -f infra/tabnews-database/compose.yaml stop",
-    "services:down": "docker compose -f infra/tabnews-database/compose.yaml down",
+    "services:down": "docker compose -f infra/tabnews-database/compose.yaml down -v",
     "dev": "npm run services:up && next dev",
     "lint:check": "npx eslint --ext .js,.jsx . ",
     "lint:fix": "npx eslint --fix --ext .js,.jsx . ",
