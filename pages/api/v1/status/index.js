@@ -29,6 +29,10 @@ async function status(request, response) {
     updated_at: updatedAt,
     dependencies: {
       database: {
+        service_url:
+          process.env.NODE_ENV !== 'development'
+            ? process.env.DATABASE_URL
+            : 'Local',
         version_details: databaseVersionValueDetails,
         version: databaseVersionValue,
         max_connections: parseInt(databaseMaxConnectionsValue),
