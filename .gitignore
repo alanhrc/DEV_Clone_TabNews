@@ -1,6 +1,7 @@
 node_modules
 .next
 .env
+.env.development
 .env.homologation
 .env.production
 pnpm-lock.yaml
